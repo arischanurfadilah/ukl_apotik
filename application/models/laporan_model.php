@@ -5,14 +5,9 @@ class Laporan_model extends CI_Model {
 
 	public function lap_jual()
 	{
-		$this->db->query("SELECT * FROM penjualan NATURAL JOIN obat;")
-				->result();
-		// return $query;
-		// return $this->db->select('*')
-		// 				->from('penjualan')
-		// 				->join('obat','penjualan.kode_obat = obat.kode_obat', 'natural')
-		// 				->order_by('id_jual', 'ASC')
-		// 				->result();
+		$sql = "SELECT * FROM penjualan NATURAL JOIN obat";
+		return $this->db->query($sql)
+						->result();
 	}
 
 }

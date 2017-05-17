@@ -30,6 +30,7 @@ class Login_model extends CI_Model {
 		{
 			return FALSE;
 		}
+
 	}
 
 	public function get_nama($nama_pegawai){
@@ -37,7 +38,7 @@ class Login_model extends CI_Model {
 						->get('pegawai')
 						->row();
 	}
-	
+
 }
 
 /* End of file login_model.php */

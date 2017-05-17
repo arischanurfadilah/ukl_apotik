@@ -69,8 +69,7 @@ class Transaksi extends CI_Controller {
 					$harga = $this->transaksi_model->getHarga($kode_obat);
 					$total = $qty * $harga;
 					$data['total_jual'] = 'value="'.$total.'"';
-					// $this->transaksi_model->total_jual($kode_obat, $total);
-
+					
 					$data['obat'] = $this->transaksi_model->dropdown_obat();
 					$data['main_view'] = 'transaksi/form_jual_view';
 					$data['notif'] = 'Transaksi berhasil';

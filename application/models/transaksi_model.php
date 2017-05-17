@@ -15,7 +15,8 @@ class Transaksi_model extends CI_Model {
 				'tgl_jual' => $this->input->post('tgl_jual'),
 				'qty' => $this->input->post('qty'),
 				'keterangan' => $this->input->post('keterangan'),
-				'kode_obat' => $this->input->post('nama_obat')
+				'kode_obat' => $this->input->post('nama_obat'),
+				'total_jual' => $this->input->post('total_jual')
 			);
 
 		//proses insert data

@@ -21,14 +21,13 @@
                                         echo '</div>';
                                     }
                                 
-                                    $datestring = '%Y - %m - %d'; 
-                                    $time = time();
+                                    
                                 ?>
 
                                     <form role="form" method="post" action="<?php echo base_url(); ?>index.php/transaksi/do_jual">
                                         <div class="form-group col-lg-12">
                                             <label>Kode Penjualan</label>
-                                            <input type="text" name="id_jual" value="<?php echo $idjualacak;?>" readonly class="form-control">
+                                            <input type="text" name="id_jual" value="<?php echo date('Y - m - d');?>" readonly class="form-control">
                                         </div>
                                         <div class="form-group col-lg-12">
                                             <label>Tanggal Beli</label>

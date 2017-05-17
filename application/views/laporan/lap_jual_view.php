@@ -22,7 +22,7 @@
                                         <th>Jumlah Obat</th>
                                         <th>Keterangan</th>
                                         <th>Harga Satuan</th>
-                                        <th>Sub Total</th>
+                                        <th>Total</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -41,7 +41,7 @@
                                                 <td>'.$data->harga.'</td>
                                                 <td>'.$data->qty * $data->harga.'</td>
                                                 <td>
-                                                <a href="'.base_url().'index.php/transaksi/hapus/'.$data->id_obat.'" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i> Hapus </a>
+                                                <a href="'.base_url().'index.php/transaksi/hapus/'.$data->id_jual.'" class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i> Hapus </a>
                                                 </td>
                                                 </tr>
                                                 ';

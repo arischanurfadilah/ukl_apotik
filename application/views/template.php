@@ -96,6 +96,9 @@
                     <?php
                         if($this->session->userdata('level') == '0'){ //super admin
                     ?>
+                    <li>
+                            <a href="<?php echo base_url(); ?>index.php/login/user"><i class="fa fa-user fa-fw"></i> Data User</a>
+                        </li>
                         <li>
                             <a href="<?php echo base_url(); ?>index.php/obat/data_obat"><i class="fa fa-medkit fa-fw"></i> Data Obat</a>
                         </li>

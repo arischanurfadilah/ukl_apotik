@@ -46,6 +46,7 @@ class Login extends CI_Controller {
 		$this->load->view('login_view');
 	}
 
+	
 }
 
 /* End of file login.php */
